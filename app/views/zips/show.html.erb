@@ -1,0 +1,16 @@
+<h1>Search The Zip Code</h1>
+<%= form_for :zip , :remote => true do |f| %>
+	<div class="zipcode">
+		<%= f.number_field :zip_code %>
+	</div>
+	<div class="action">
+		<%= f.submit "look Up" , :action =>'create' %>
+	</div>
+<div class="fields">
+State 	  : <%= f.text_field :state %><br/>
+City 	  :	<%= f.text_field :city %><br/>
+Area Code :<%= f.text_field :area_code %><br/>
+Time Zone :<%= f.text_field :time_zone %><br/>
+</div>
+
+<% end %>

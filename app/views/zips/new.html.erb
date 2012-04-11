@@ -1,0 +1,22 @@
+<h1 class="head">Search The Zip Code</h1>
+<%= form_for :zip  do |f| %>
+	<div class="zipcode">
+		<%= f.text_field :zip_code %>
+	</div>
+	<div class="action">
+		<%= f.submit "Find" , :method => :post %>
+	</div>
+	
+	<div class="fields">
+		<dt class ="ajax-test"></dt>
+		<dt>State :</dt>
+		<dd> <%= f.text_field :state %><br/></dd>
+		<dt>City :</dt>
+		<dd><%= f.text_field :city %></dd><br/>
+		<dt>Area Code :</dt>
+		<dd><%= f.text_field :area_code %></dd><br/>
+		<dt>Time Zone :</dt>
+		<dd><%= f.text_field :time_zone %></dd><br/>
+	</div>
+
+<% end %>

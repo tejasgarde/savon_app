@@ -1,0 +1,1 @@
+$("#zipcode").html("<%= escape_javascript(render(@zip))%>");$(document).ready(function(){		$("#zipcode").ajaxStart(function(){debugger;  		$(".ajax-test").val("Loading....");	});		$("#zipcode").ajaxStop(function(){	alert("All AJAX requests completed");  });	});
